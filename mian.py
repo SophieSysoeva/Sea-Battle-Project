@@ -9,7 +9,7 @@ size_cells = 35
 des = False
 # отступ слева
 left_ind = 70
-# отступ свершу
+# отступ сверху
 top_ind = 105
 start = True
 b_hit = False
@@ -27,7 +27,7 @@ point = pygame.image.load("images/Point.png")
 # 
 step = [0, 4, 3, 3, 2, 2, 2, 1, 1, 1, 1 ]
 step_b = [4, 3, 3, 2, 2, 2, 1, 1, 1, 1 ]
-# Вычесления координат 
+# Вычисления координат 
 player_ship_coords = []
 bot_ship_coords = []
 for row in range(10):
@@ -56,7 +56,7 @@ clicks = 0
 bot_ships = [] 
 player_ships = []
 
-# Создания кораблей бота def
+# Создания кораблей бота
 
 for ships_size in step_b:
     while True:
@@ -133,7 +133,7 @@ while game:
                     current_ship = None
                     print(m_list.player_field)
                         
-            # Ход игрока def
+            # Ход игрока
             if player_turn == True:
                 if table2.collidepoint(pygame.mouse.get_pos()) and start == False:
                     if pygame.mouse.get_pressed(3)[0]:
